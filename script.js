@@ -32,7 +32,7 @@ for (let i = 0; i < optionsList.length; i++) {
 function updateScore() {
   let scoreDiv = document.getElementById("score");
 
-  scoreDiv.innerHTML = `SCORE: ${score}`;
+  scoreDiv.innerHTML = `SCORE: ${(score * 100 / questions.length)}/100`;
 }
 
 function paintRed(el) {
