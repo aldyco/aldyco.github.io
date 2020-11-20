@@ -21,6 +21,12 @@ header img {
 
 body {
   background-color: aliceblue;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 main {
